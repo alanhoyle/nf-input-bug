@@ -17,6 +17,7 @@ N E X T F L O W  ~  version 19.10.0
 Launching `/tmp/nf-input-bug/test.nf` [chaotic_carlsson] - revision: 88a147f001
 [BLAH0, /tmp/nf-input-bug/file-that-exists.txt]
 [BLAH1, /home/username/ /tmp/nf-input-bug/file-that-exists.txt]
+[BLAH2, /home/username/ /tmp/nf-input-bug/file-that-is-missing.txt]
 ```
 
 Also tested on the latest release:
@@ -26,5 +27,7 @@ Also tested on the latest release:
 N E X T F L O W  ~  version 20.01.0
 Launching `/tmp/nf-input-bug/test.nf` [suspicious_booth] - revision: 88a147f001
 [BLAH0, /tmp/nf-input-bug/file-that-exists.txt]
-[BLAH1, /Users/alanh/ /tmp/nf-input-bug/file-that-exists.txt]
+[BLAH1, /home/username/ /tmp/nf-input-bug/file-that-exists.txt]
+[BLAH2, /home/username/ /tmp/nf-input-bug/file-that-is-missing.txt]
+
 ```
