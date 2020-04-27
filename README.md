@@ -4,14 +4,15 @@ When there are erroneous spaces in an input manifest parsed by .splitCsv(), the 
 
 INSTRUCTIONS TO REPRODUCE:
 
-1. clone this repo into /tmp/nf-input-bug
-2. `cd ~`
+1. clone this repo into `/tmp/nf-input-bug`:
+    `$ git clone git@github.com:alanhoyle/nf-input-bug.git /tmp/nf-input-bug`
+2.  change to literally any directory (I use $HOME in the examples below...)
 3. `nextflow run /tmp/nf-input-bug/test.nf --input /tmp/nf-input-bug/manifest.txt`
 
 Observe the output channel:
 
 ```
-$ cd /home/username
+$ cd $HOME
 $ nextflow run /tmp/nf-input-bug/test.nf  --input /tmp/nf-input-bug/manifest.txt
 N E X T F L O W  ~  version 19.10.0
 Launching `/tmp/nf-input-bug/test.nf` [chaotic_carlsson] - revision: 88a147f001
