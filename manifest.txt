@@ -2,4 +2,4 @@ subject	filepath
 BLAH0	/tmp/nf-input-bug/file-that-exists.txt
 BLAH1	 /tmp/nf-input-bug/file-that-exists.txt
 BLAH2	 /tmp/nf-input-bug/file-that-is-missing.txt
-BLAH3 more bad input /tmp/nf-input-bug/file-that-is-missing.txt
+BLAH3	more bad input /tmp/nf-input-bug/file-that-is-missing.txt
