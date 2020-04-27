@@ -1,0 +1,3 @@
+subject	filepath
+BLAH0	/tmp/nf-input-bug/file-that-exists.txt
+BLAH1	 /tmp/nf-input-bug/file-that-exists.txt
