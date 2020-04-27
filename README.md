@@ -19,16 +19,19 @@ Launching `/tmp/nf-input-bug/test.nf` [chaotic_carlsson] - revision: 88a147f001
 [BLAH0, /tmp/nf-input-bug/file-that-exists.txt]
 [BLAH1, /home/username/ /tmp/nf-input-bug/file-that-exists.txt]
 [BLAH2, /home/username/ /tmp/nf-input-bug/file-that-is-missing.txt]
-```
-
-Also tested on the latest release:
+[BLAH3, /home/username/more bad input /tmp/nf-input-bug/file-that-is-missing.txt]
 
 ```
-➜  ~ nextflow run /tmp/nf-input-bug/test.nf --input /tmp/nf-input-bug/manifest.txt
+
+Also tested on the latest release on macOS:
+
+```
+$ nextflow run /tmp/nf-input-bug/test.nf --input /tmp/nf-input-bug/manifest.txt
 N E X T F L O W  ~  version 20.01.0
-Launching `/tmp/nf-input-bug/test.nf` [suspicious_booth] - revision: 88a147f001
+Launching `/tmp/nf-input-bug/test.nf` [stupefied_fermat] - revision: 88a147f001
 [BLAH0, /tmp/nf-input-bug/file-that-exists.txt]
-[BLAH1, /home/username/ /tmp/nf-input-bug/file-that-exists.txt]
-[BLAH2, /home/username/ /tmp/nf-input-bug/file-that-is-missing.txt]
+[BLAH1, /private/tmp/nf-input-bug/ /tmp/nf-input-bug/file-that-exists.txt]
+[BLAH2, /private/tmp/nf-input-bug/ /tmp/nf-input-bug/file-that-is-missing.txt]
+[BLAH3, /private/tmp/nf-input-bug/more bad input /tmp/nf-input-bug/file-that-is-missing.txt]
 
 ```
